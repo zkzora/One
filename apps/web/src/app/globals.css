@@ -1,0 +1,182 @@
+@import "tailwindcss";
+
+/*
+ * Palette.
+ *
+ * These live here rather than inline on the root element so a theme can
+ * override them: an inline declaration wins against any stylesheet rule, which
+ * is why the toggle did nothing while the tokens sat in the markup.
+ */
+:root {
+  --bg: #f5f4f1;
+  --panel: #efeeea;
+  --white: #ffffff;
+  --card: #faf9f7;
+  --ink: #151515;
+  --dim: #6e6e73;
+  --line: rgba(21, 21, 21, 0.13);
+  --hair: rgba(21, 21, 21, 0.07);
+
+  --blue: #2f4fe0;
+  --bluedeep: #1c33ad;
+
+  --amber: #ffc46b;
+  --lilac: #b9b0f7;
+  --sky: #a7c8f7;
+  --mint: #c9e9c2;
+  --pink: #f2a7dd;
+  --lime: #c9e24f;
+  --yellow: #f7e04d;
+  --coral: #f08a5d;
+  --red: #d8342b;
+
+  --gtop: #fdf7f5;
+  --gmid: #f5f4f1;
+  --gbot: #e2ebfc;
+  --g1: rgba(47, 79, 224, 0.5);
+  --g2: rgba(47, 79, 224, 0.32);
+  --g3: rgba(255, 206, 219, 0.72);
+
+  color-scheme: light;
+}
+
+/*
+ * Dark theme.
+ *
+ * Surfaces invert and the accent hues stay put: they carry meaning here (coral
+ * is a risk signal, blue is a score) so shifting them would change what a
+ * reader is being told. Blue lifts slightly to hold contrast against a dark
+ * field, and the washes are pulled right down so the page reads as paper at
+ * night rather than as a light-up billboard.
+ */
+:root[data-theme="dark"] {
+  --bg: #121211;
+  --panel: #1a1a19;
+  --white: #1e1e1c;
+  --card: #191918;
+  --ink: #ededea;
+  --dim: #9a9a96;
+  --line: rgba(237, 237, 234, 0.16);
+  --hair: rgba(237, 237, 234, 0.09);
+
+  --blue: #7d93ff;
+  --bluedeep: #5f77f5;
+
+  --gtop: #1a1817;
+  --gmid: #121211;
+  --gbot: #15192b;
+  --g1: rgba(125, 147, 255, 0.24);
+  --g2: rgba(125, 147, 255, 0.16);
+  --g3: rgba(242, 167, 221, 0.14);
+
+  color-scheme: dark;
+}
+
+/*
+ * Logo swapping.
+ *
+ * The mark is a raster image, so CSS cannot recolour it. Both versions are in
+ * the markup and the theme decides which one is shown.
+ */
+[data-logo] {
+  display: block;
+}
+
+[data-logo="dark"],
+:root[data-theme="dark"] [data-logo="light"] {
+  display: none;
+}
+
+:root[data-theme="dark"] [data-logo="dark"] {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /*
+   * Deliberately the footer's colour, not the page's.
+   *
+   * The page wrapper paints `--bg` for itself, so this only shows in the strip
+   * below it when the document is shorter than the viewport. Painting that
+   * strip `--bg` left a grey band under a white footer that read as a layout
+   * bug; matching the footer makes it disappear.
+   */
+  background: var(--white);
+  color: var(--ink);
+  font-family: "Figtree", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--blue);
+}
+
+::selection {
+  background: var(--yellow);
+  color: #151515;
+}
+
+@keyframes om-float {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0);
+  }
+  33% {
+    transform: translate(2.4%, -3%) rotate(2deg);
+  }
+  66% {
+    transform: translate(-2%, 2.2%) rotate(-1.5deg);
+  }
+}
+
+@keyframes om-mesh {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-4%, 3%) scale(1.12);
+  }
+}
+
+@keyframes om-mesh2 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1.05);
+  }
+  50% {
+    transform: translate(5%, -4%) scale(0.94);
+  }
+}
+
+@keyframes om-dot {
+  0%,
+  45% {
+    opacity: 1;
+  }
+  50%,
+  95% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

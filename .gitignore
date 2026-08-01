@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Rust build output
+target/
+
+# Next.js
+.next/
+out/
+next-env.d.ts
+
+# Build artifacts
+dist/
+*.wasm
+
+# Local secrets and deploy scratch
+.env
+.env.local
+.env*.local
+.soroban/
+.stellar/
+
+# Working files
+.tmp-*
+*.log
+
+# Editor and OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Claude Code local settings
+.claude/settings.local.json

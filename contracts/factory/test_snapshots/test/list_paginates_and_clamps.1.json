@@ -1,0 +1,1224 @@
+{
+  "generators": {
+    "address": 8,
+    "nonce": 0,
+    "mux_id": 0
+  },
+  "auth": [
+    [],
+    [
+      [
+        "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+        {
+          "function": {
+            "contract_fn": {
+              "contract_address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+              "function_name": "set_wasm",
+              "args": [
+                {
+                  "bytes": "fab25ef828c0f601f55e6c83929fdab00eac8881f2277260ddc54769b1646493"
+                }
+              ]
+            }
+          },
+          "sub_invocations": []
+        }
+      ]
+    ],
+    [
+      [
+        "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M",
+        {
+          "function": {
+            "contract_fn": {
+              "contract_address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+              "function_name": "deploy_agent",
+              "args": [
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                },
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAITA4"
+                },
+                {
+                  "string": "summarize.fn"
+                },
+                {
+                  "string": "https://example.com/x402/summarize"
+                },
+                {
+                  "string": "Condenses long documents into structured summaries."
+                },
+                {
+                  "vec": [
+                    {
+                      "string": "text"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "sub_invocations": []
+        }
+      ]
+    ],
+    [
+      [
+        "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M",
+        {
+          "function": {
+            "contract_fn": {
+              "contract_address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+              "function_name": "deploy_agent",
+              "args": [
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                },
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK3IM"
+                },
+                {
+                  "string": "summarize.fn"
+                },
+                {
+                  "string": "https://example.com/x402/summarize"
+                },
+                {
+                  "string": "Condenses long documents into structured summaries."
+                },
+                {
+                  "vec": [
+                    {
+                      "string": "text"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "sub_invocations": []
+        }
+      ]
+    ],
+    [
+      [
+        "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M",
+        {
+          "function": {
+            "contract_fn": {
+              "contract_address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+              "function_name": "deploy_agent",
+              "args": [
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                },
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDR4"
+                },
+                {
+                  "string": "summarize.fn"
+                },
+                {
+                  "string": "https://example.com/x402/summarize"
+                },
+                {
+                  "string": "Condenses long documents into structured summaries."
+                },
+                {
+                  "vec": [
+                    {
+                      "string": "text"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "sub_invocations": []
+        }
+      ]
+    ],
+    [
+      [
+        "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M",
+        {
+          "function": {
+            "contract_fn": {
+              "contract_address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+              "function_name": "deploy_agent",
+              "args": [
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                },
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOLZM"
+                },
+                {
+                  "string": "summarize.fn"
+                },
+                {
+                  "string": "https://example.com/x402/summarize"
+                },
+                {
+                  "string": "Condenses long documents into structured summaries."
+                },
+                {
+                  "vec": [
+                    {
+                      "string": "text"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "sub_invocations": []
+        }
+      ]
+    ],
+    [
+      [
+        "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M",
+        {
+          "function": {
+            "contract_fn": {
+              "contract_address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+              "function_name": "deploy_agent",
+              "args": [
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                },
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARQG5"
+                },
+                {
+                  "string": "summarize.fn"
+                },
+                {
+                  "string": "https://example.com/x402/summarize"
+                },
+                {
+                  "string": "Condenses long documents into structured summaries."
+                },
+                {
+                  "vec": [
+                    {
+                      "string": "text"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "sub_invocations": []
+        }
+      ]
+    ],
+    [],
+    [],
+    [],
+    []
+  ],
+  "ledger": {
+    "protocol_version": 26,
+    "sequence_number": 0,
+    "timestamp": 0,
+    "network_id": "0000000000000000000000000000000000000000000000000000000000000000",
+    "base_reserve": 0,
+    "min_persistent_entry_ttl": 4096,
+    "min_temp_entry_ttl": 16,
+    "max_entry_ttl": 6312000,
+    "ledger_entries": [
+      {
+        "entry": {
+          "last_modified_ledger_seq": 0,
+          "data": {
+            "contract_data": {
+              "ext": "v0",
+              "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+              "key": {
+                "ledger_key_nonce": {
+                  "nonce": "801925984706572462"
+                }
+              },
+              "durability": "temporary",
+              "val": "void"
+            }
+          },
+          "ext": "v0"
+        },
+        "live_until": 6311999
+      },
+      {
+        "entry": {
+          "last_modified_ledger_seq": 0,
+          "data": {
+            "contract_data": {
+              "ext": "v0",
+              "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+              "key": {
+                "vec": [
+                  {
+                    "symbol": "ByPayto"
+                  },
+                  {
+                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAITA4"
+                  }
+                ]
+              },
+              "durability": "persistent",
+              "val": {
+                "address": "CCVEXS22PQLEN5IJWSO6ADMWLZN5Z2Z5FZDY2BZZK22WTHSJWN4PGHPS"
+              }
+            }
+          },
+          "ext": "v0"
+        },
+        "live_until": 518400
+      },
+      {
+        "entry": {
+          "last_modified_ledger_seq": 0,
+          "data": {
+            "contract_data": {
+              "ext": "v0",
+              "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+              "key": {
+                "vec": [
+                  {
+                    "symbol": "ByPayto"
+                  },
+                  {
+                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK3IM"
+                  }
+                ]
+              },
+              "durability": "persistent",
+              "val": {
+                "address": "CCFHSQI3MSS7LXULN5PWO4ZMFIYG7MGJKN6QVLJDCYGSYXALNMQCPFR5"
+              }
+            }
+          },
+          "ext": "v0"
+        },
+        "live_until": 518400
+      },
+      {
+        "entry": {
+          "last_modified_ledger_seq": 0,
+          "data": {
+            "contract_data": {
+              "ext": "v0",
+              "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+              "key": {
+                "vec": [
+                  {
+                    "symbol": "ByPayto"
+                  },
+                  {
+                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDR4"
+                  }
+                ]
+              },
+              "durability": "persistent",
+              "val": {
+                "address": "CCISX3KW5AU277TVYWDI5ENCXNLHAJW74CCCT4NHVE2RIB3W2DAK2MER"
+              }
+            }
+          },
+          "ext": "v0"
+        },
+        "live_until": 518400
+      },
+      {
+        "entry": {
+          "last_modified_ledger_seq": 0,
+          "data": {
+            "contract_data": {
+              "ext": "v0",
+              "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+              "key": {
+                "vec": [
+                  {
+                    "symbol": "ByPayto"
+                  },
+                  {
+                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOLZM"
+                  }
+                ]
+              },
+              "durability": "persistent",
+              "val": {
+                "address": "CDQH7FU3KJ34V4BOWDMN2KLEIOA4ZVGFWW7UINI24J7ILSBMFAILVKBW"
+              }
+            }
+          },
+          "ext": "v0"
+        },
+        "live_until": 518400
+      },
+      {
+        "entry": {
+          "last_modified_ledger_seq": 0,
+          "data": {
+            "contract_data": {
+              "ext": "v0",
+              "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+              "key": {
+                "vec": [
+                  {
+                    "symbol": "ByPayto"
+                  },
+                  {
+                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARQG5"
+                  }
+                ]
+              },
+              "durability": "persistent",
+              "val": {
+                "address": "CCNCUZJW4WVDJVV4IARNAMJIRWLZ2GTUQUXUWANVRYJC3UODIJ44BNIU"
+              }
+            }
+          },
+          "ext": "v0"
+        },
+        "live_until": 518400
+      },
+      {
+        "entry": {
+          "last_modified_ledger_seq": 0,
+          "data": {
+            "contract_data": {
+              "ext": "v0",
+              "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+              "key": {
+                "vec": [
+                  {
+                    "symbol": "Index"
+                  },
+                  {
+                    "u32": 0
+                  }
+                ]
+              },
+              "durability": "persistent",
+              "val": {
+                "address": "CCVEXS22PQLEN5IJWSO6ADMWLZN5Z2Z5FZDY2BZZK22WTHSJWN4PGHPS"
+              }
+            }
+          },
+          "ext": "v0"
+        },
+        "live_until": 518400
+      },
+      {
+        "entry": {
+          "last_modified_ledger_seq": 0,
+          "data": {
+            "contract_data": {
+              "ext": "v0",
+              "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+              "key": {
+                "vec": [
+                  {
+                    "symbol": "Index"
+                  },
+                  {
+                    "u32": 1
+                  }
+                ]
+              },
+              "durability": "persistent",
+              "val": {
+                "address": "CCFHSQI3MSS7LXULN5PWO4ZMFIYG7MGJKN6QVLJDCYGSYXALNMQCPFR5"
+              }
+            }
+          },
+          "ext": "v0"
+        },
+        "live_until": 518400
+      },
+      {
+        "entry": {
+          "last_modified_ledger_seq": 0,
+          "data": {
+            "contract_data": {
+              "ext": "v0",
+              "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+              "key": {
+                "vec": [
+                  {
+                    "symbol": "Index"
+                  },
+                  {
+                    "u32": 2
+                  }
+                ]
+              },
+              "durability": "persistent",
+              "val": {
+                "address": "CCISX3KW5AU277TVYWDI5ENCXNLHAJW74CCCT4NHVE2RIB3W2DAK2MER"
+              }
+            }
+          },
+          "ext": "v0"
+        },
+        "live_until": 518400
+      },
+      {
+        "entry": {
+          "last_modified_ledger_seq": 0,
+          "data": {
+            "contract_data": {
+              "ext": "v0",
+              "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+              "key": {
+                "vec": [
+                  {
+                    "symbol": "Index"
+                  },
+                  {
+                    "u32": 3
+                  }
+                ]
+              },
+              "durability": "persistent",
+              "val": {
+                "address": "CDQH7FU3KJ34V4BOWDMN2KLEIOA4ZVGFWW7UINI24J7ILSBMFAILVKBW"
+              }
+            }
+          },
+          "ext": "v0"
+        },
+        "live_until": 518400
+      },
+      {
+        "entry": {
+          "last_modified_ledger_seq": 0,
+          "data": {
+            "contract_data": {
+              "ext": "v0",
+              "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+              "key": {
+                "vec": [
+                  {
+                    "symbol": "Index"
+                  },
+                  {
+                    "u32": 4
+                  }
+                ]
+              },
+              "durability": "persistent",
+              "val": {
+                "address": "CCNCUZJW4WVDJVV4IARNAMJIRWLZ2GTUQUXUWANVRYJC3UODIJ44BNIU"
+              }
+            }
+          },
+          "ext": "v0"
+        },
+        "live_until": 518400
+      },
+      {
+        "entry": {
+          "last_modified_ledger_seq": 0,
+          "data": {
+            "contract_data": {
+              "ext": "v0",
+              "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4",
+              "key": "ledger_key_contract_instance",
+              "durability": "persistent",
+              "val": {
+                "contract_instance": {
+                  "executable": {
+                    "wasm": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                  },
+                  "storage": [
+                    {
+                      "key": {
+                        "symbol": "ADMIN"
+                      },
+                      "val": {
+                        "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "COUNT"
+                      },
+                      "val": {
+                        "u32": 5
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "WASM"
+                      },
+                      "val": {
+                        "bytes": "fab25ef828c0f601f55e6c83929fdab00eac8881f2277260ddc54769b1646493"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "ext": "v0"
+        },
+        "live_until": 518400
+      },
+      {
+        "entry": {
+          "last_modified_ledger_seq": 0,
+          "data": {
+            "contract_data": {
+              "ext": "v0",
+              "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M",
+              "key": {
+                "ledger_key_nonce": {
+                  "nonce": "1033654523790656264"
+                }
+              },
+              "durability": "temporary",
+              "val": "void"
+            }
+          },
+          "ext": "v0"
+        },
+        "live_until": 6311999
+      },
+      {
+        "entry": {
+          "last_modified_ledger_seq": 0,
+          "data": {
+            "contract_data": {
+              "ext": "v0",
+              "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M",
+              "key": {
+                "ledger_key_nonce": {
+                  "nonce": "2032731177588607455"
+                }
+              },
+              "durability": "temporary",
+              "val": "void"
+            }
+          },
+          "ext": "v0"
+        },
+        "live_until": 6311999
+      },
+      {
+        "entry": {
+          "last_modified_ledger_seq": 0,
+          "data": {
+            "contract_data": {
+              "ext": "v0",
+              "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M",
+              "key": {
+                "ledger_key_nonce": {
+                  "nonce": "4270020994084947596"
+                }
+              },
+              "durability": "temporary",
+              "val": "void"
+            }
+          },
+          "ext": "v0"
+        },
+        "live_until": 6311999
+      },
+      {
+        "entry": {
+          "last_modified_ledger_seq": 0,
+          "data": {
+            "contract_data": {
+              "ext": "v0",
+              "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M",
+              "key": {
+                "ledger_key_nonce": {
+                  "nonce": "4837995959683129791"
+                }
+              },
+              "durability": "temporary",
+              "val": "void"
+            }
+          },
+          "ext": "v0"
+        },
+        "live_until": 6311999
+      },
+      {
+        "entry": {
+          "last_modified_ledger_seq": 0,
+          "data": {
+            "contract_data": {
+              "ext": "v0",
+              "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M",
+              "key": {
+                "ledger_key_nonce": {
+                  "nonce": "5541220902715666415"
+                }
+              },
+              "durability": "temporary",
+              "val": "void"
+            }
+          },
+          "ext": "v0"
+        },
+        "live_until": 6311999
+      },
+      {
+        "entry": {
+          "last_modified_ledger_seq": 0,
+          "data": {
+            "contract_data": {
+              "ext": "v0",
+              "contract": "CCFHSQI3MSS7LXULN5PWO4ZMFIYG7MGJKN6QVLJDCYGSYXALNMQCPFR5",
+              "key": "ledger_key_contract_instance",
+              "durability": "persistent",
+              "val": {
+                "contract_instance": {
+                  "executable": {
+                    "wasm": "fab25ef828c0f601f55e6c83929fdab00eac8881f2277260ddc54769b1646493"
+                  },
+                  "storage": [
+                    {
+                      "key": {
+                        "symbol": "RECORD"
+                      },
+                      "val": {
+                        "map": [
+                          {
+                            "key": {
+                              "symbol": "description"
+                            },
+                            "val": {
+                              "string": "Condenses long documents into structured summaries."
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "endpoint"
+                            },
+                            "val": {
+                              "string": "https://example.com/x402/summarize"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "name"
+                            },
+                            "val": {
+                              "string": "summarize.fn"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "owner"
+                            },
+                            "val": {
+                              "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "payto"
+                            },
+                            "val": {
+                              "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK3IM"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "registered_at"
+                            },
+                            "val": {
+                              "u64": "0"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "tags"
+                            },
+                            "val": {
+                              "vec": [
+                                {
+                                  "string": "text"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "updated_at"
+                            },
+                            "val": {
+                              "u64": "0"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "ext": "v0"
+        },
+        "live_until": 518400
+      },
+      {
+        "entry": {
+          "last_modified_ledger_seq": 0,
+          "data": {
+            "contract_data": {
+              "ext": "v0",
+              "contract": "CCISX3KW5AU277TVYWDI5ENCXNLHAJW74CCCT4NHVE2RIB3W2DAK2MER",
+              "key": "ledger_key_contract_instance",
+              "durability": "persistent",
+              "val": {
+                "contract_instance": {
+                  "executable": {
+                    "wasm": "fab25ef828c0f601f55e6c83929fdab00eac8881f2277260ddc54769b1646493"
+                  },
+                  "storage": [
+                    {
+                      "key": {
+                        "symbol": "RECORD"
+                      },
+                      "val": {
+                        "map": [
+                          {
+                            "key": {
+                              "symbol": "description"
+                            },
+                            "val": {
+                              "string": "Condenses long documents into structured summaries."
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "endpoint"
+                            },
+                            "val": {
+                              "string": "https://example.com/x402/summarize"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "name"
+                            },
+                            "val": {
+                              "string": "summarize.fn"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "owner"
+                            },
+                            "val": {
+                              "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "payto"
+                            },
+                            "val": {
+                              "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDR4"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "registered_at"
+                            },
+                            "val": {
+                              "u64": "0"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "tags"
+                            },
+                            "val": {
+                              "vec": [
+                                {
+                                  "string": "text"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "updated_at"
+                            },
+                            "val": {
+                              "u64": "0"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "ext": "v0"
+        },
+        "live_until": 518400
+      },
+      {
+        "entry": {
+          "last_modified_ledger_seq": 0,
+          "data": {
+            "contract_data": {
+              "ext": "v0",
+              "contract": "CCNCUZJW4WVDJVV4IARNAMJIRWLZ2GTUQUXUWANVRYJC3UODIJ44BNIU",
+              "key": "ledger_key_contract_instance",
+              "durability": "persistent",
+              "val": {
+                "contract_instance": {
+                  "executable": {
+                    "wasm": "fab25ef828c0f601f55e6c83929fdab00eac8881f2277260ddc54769b1646493"
+                  },
+                  "storage": [
+                    {
+                      "key": {
+                        "symbol": "RECORD"
+                      },
+                      "val": {
+                        "map": [
+                          {
+                            "key": {
+                              "symbol": "description"
+                            },
+                            "val": {
+                              "string": "Condenses long documents into structured summaries."
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "endpoint"
+                            },
+                            "val": {
+                              "string": "https://example.com/x402/summarize"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "name"
+                            },
+                            "val": {
+                              "string": "summarize.fn"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "owner"
+                            },
+                            "val": {
+                              "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "payto"
+                            },
+                            "val": {
+                              "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARQG5"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "registered_at"
+                            },
+                            "val": {
+                              "u64": "0"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "tags"
+                            },
+                            "val": {
+                              "vec": [
+                                {
+                                  "string": "text"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "updated_at"
+                            },
+                            "val": {
+                              "u64": "0"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "ext": "v0"
+        },
+        "live_until": 518400
+      },
+      {
+        "entry": {
+          "last_modified_ledger_seq": 0,
+          "data": {
+            "contract_data": {
+              "ext": "v0",
+              "contract": "CCVEXS22PQLEN5IJWSO6ADMWLZN5Z2Z5FZDY2BZZK22WTHSJWN4PGHPS",
+              "key": "ledger_key_contract_instance",
+              "durability": "persistent",
+              "val": {
+                "contract_instance": {
+                  "executable": {
+                    "wasm": "fab25ef828c0f601f55e6c83929fdab00eac8881f2277260ddc54769b1646493"
+                  },
+                  "storage": [
+                    {
+                      "key": {
+                        "symbol": "RECORD"
+                      },
+                      "val": {
+                        "map": [
+                          {
+                            "key": {
+                              "symbol": "description"
+                            },
+                            "val": {
+                              "string": "Condenses long documents into structured summaries."
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "endpoint"
+                            },
+                            "val": {
+                              "string": "https://example.com/x402/summarize"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "name"
+                            },
+                            "val": {
+                              "string": "summarize.fn"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "owner"
+                            },
+                            "val": {
+                              "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "payto"
+                            },
+                            "val": {
+                              "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAITA4"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "registered_at"
+                            },
+                            "val": {
+                              "u64": "0"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "tags"
+                            },
+                            "val": {
+                              "vec": [
+                                {
+                                  "string": "text"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "updated_at"
+                            },
+                            "val": {
+                              "u64": "0"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "ext": "v0"
+        },
+        "live_until": 518400
+      },
+      {
+        "entry": {
+          "last_modified_ledger_seq": 0,
+          "data": {
+            "contract_data": {
+              "ext": "v0",
+              "contract": "CDQH7FU3KJ34V4BOWDMN2KLEIOA4ZVGFWW7UINI24J7ILSBMFAILVKBW",
+              "key": "ledger_key_contract_instance",
+              "durability": "persistent",
+              "val": {
+                "contract_instance": {
+                  "executable": {
+                    "wasm": "fab25ef828c0f601f55e6c83929fdab00eac8881f2277260ddc54769b1646493"
+                  },
+                  "storage": [
+                    {
+                      "key": {
+                        "symbol": "RECORD"
+                      },
+                      "val": {
+                        "map": [
+                          {
+                            "key": {
+                              "symbol": "description"
+                            },
+                            "val": {
+                              "string": "Condenses long documents into structured summaries."
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "endpoint"
+                            },
+                            "val": {
+                              "string": "https://example.com/x402/summarize"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "name"
+                            },
+                            "val": {
+                              "string": "summarize.fn"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "owner"
+                            },
+                            "val": {
+                              "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "payto"
+                            },
+                            "val": {
+                              "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOLZM"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "registered_at"
+                            },
+                            "val": {
+                              "u64": "0"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "tags"
+                            },
+                            "val": {
+                              "vec": [
+                                {
+                                  "string": "text"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "updated_at"
+                            },
+                            "val": {
+                              "u64": "0"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "ext": "v0"
+        },
+        "live_until": 518400
+      },
+      {
+        "entry": {
+          "last_modified_ledger_seq": 0,
+          "data": {
+            "contract_code": {
+              "ext": "v0",
+              "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "code": ""
+            }
+          },
+          "ext": "v0"
+        },
+        "live_until": 518400
+      },
+      {
+        "entry": {
+          "last_modified_ledger_seq": 0,
+          "data": {
+            "contract_code": {
+              "ext": {
+                "v1": {
+                  "ext": "v0",
+                  "cost_inputs": {
+                    "ext": "v0",
+                    "n_instructions": 1461,
+                    "n_functions": 18,
+                    "n_globals": 4,
+                    "n_table_entries": 0,
+                    "n_types": 14,
+                    "n_data_segments": 1,
+                    "n_elem_segments": 0,
+                    "n_imports": 15,
+                    "n_exports": 10,
+                    "n_data_segment_bytes": 121
+                  }
+                }
+              },
+              "hash": "fab25ef828c0f601f55e6c83929fdab00eac8881f2277260ddc54769b1646493",
+              "code": "0061736d0100000001530e60017e017e60027e7e017e6000017e60017f0060047e7e7e7e017e60037e7e7e017e60027f7e0060027f7f0060000060047e7e7e7e017f60017f017e60067e7e7e7e7e7e017e60027f7f017e60027f7f017f025b0f0169015f0000016c01300001016c01310001016d01610004016c015f0005016d013900050162016b0000017601330000017601310001016901300000016101300000017801310001017801340002016c0138000101760167000103131206030603070308090a0b02020202000c040d05030100110621047f01418080c0000b7f0041fc80c0000b7f0041fc80c0000b7f00418081c0000b076a0a066d656d6f727902000d5f5f636f6e7374727563746f72001804696e666f001a056f776e6572001b05706179746f001c0e7472616e736665725f6f776e6572001d06757064617465001f015f03010a5f5f646174615f656e6403020b5f5f686561705f6261736503030c01010ab717122f00200142ffffffffffffffff0058047e200142088642068405200110000b210120004200370300200020013703080be10202027f087e230041d0006b220124000240428e9e9dcd83ea01420210014201510440428e9e9dcd83ea014202100221030340200241c000470440200120026a4202370300200241086a21020c010b0b200342ff018342cc00520d0120034284808080c08780082001ad4220864204844284808080800110031a2001290300220342ff018342c900520d012001290308220442ff018342c900520d012001290310220542ff018342c900520d012001290318220642ff018342cd00520d012001290320220742ff018342cd00520d01200141406b22022001290328101120012802400d012001290330220842ff018342cb00520d01200129034821092002200129033810114201210a20012903404201510d0120002001290348370340200020093703382000200837033020002003370328200020043703202000200537031820002007370310200020063703080b2000200a370300200141d0006a24000f0b000b4902017f017e027e2001a741ff0171220241c0004704402002410647044042012103428390808080010c020b20014208880c010b200110090b210120002003370300200020013703080b3801017f230041106b2201240020012000101320012903004201510440000b428e9e9dcd83ea012001290308420210041a200141106a24000bd40102017f087e230041406a22022400200129030821042001290300210520012903102106200129031821072001290320210820022001290330100f42012103024020022802000d00200229030821092001290328210a20022001290338100f20022802000d00200220022903083703382002200a37033020022009370328200220043703202002200537031820022006370310200220073703082002200837030020004284808080c08780082002ad422086420484428480808080011005370308420021030b20002003370300200241406b24000b4a01017f230041d0006b22012400200141086a10102000027f20012802084504402000410136020441010c010b200041086a200141106a10201a101541000b360200200141d0006a24000b170042848080808090fd01428480808080a0fa03100d1a0bc001002000100642808080801054044041070f0b20001006428080808090085a044041020f0b2001100642808080801054044041080f0b2001100642ffffffff8f2056044041030f0b2002100642ffffffff8fc00056044041040f0b2003100742ffffffff8f0156044041050f0b2003100742208842017c21014204210002400340200142017d220150044041000f0b200320001008220242ff018342c900520d0120004280808080107c21002002100642ffffffff8f04580d000b41060f0b000b2400200028020045044020002903080f0b200028020441016bad4220864283808080107c0baf0102017f017e230041406a220624000240200042ff018342cd0052200142ff018342cd005272200242ff018342c90052200342ff018342c900527272200442ff018342c90052200542ff018342cb00527272450440200220032004200510160d0120061019220737033820062007370330200620053703282006200437032020062003370318200620023703102006200137030820062000370300200610121015200641406b240042020f0b000b000b2b02017e017f100c2200a741ff017122014106470440200141c000460440200010090f0b000b20004208880b5c02017f017e230041e0006b22002400200041086a1014027e2000280208450440200041d0006a200041106a1013200028025045044020002903580c020b000b200028020c41016bad4220864283808080107c0b200041e0006a24000b5902027f017e230041e0006b22002400200041186a1014410121010240200028021841014604402000200028021c36020c0c010b20002000290320370310410021010b20002001360208200041086a1017200041e0006a24000b5902027f017e230041e0006b22002400200041186a1014410121010240200028021841014604402000200028021c36020c0c010b20002000290328370310410021010b20002001360208200041086a1017200041e0006a24000bf70102027f017e230041a0016b220124000240200042ff018342cd00510440200141c8006a1010200128024845044042838080801021000c020b200141086a2202200141d0006a10201a20012903082203100a1a200120003703082001101937034020021012101520012003370398012001428eeeea99cf06370390014100210203402002411046044041002102034020024110470440200141c8006a20026a20014190016a20026a290300370300200241086a21020c010b0b200141c8006a4102101e2000100b1a420221000c0305200141c8006a20026a4202370300200241086a21020c010b000b000b000b200141a0016a240020000b16002000ad4220864204842001ad422086420484100e0ba40201047f23004190016b220624000240200042ff018342c90052200142ff018342c9005272200242ff018342c90052200342ff018342cb005272720d00200641406b101002402006280240450440410121050c010b2006200641c8006a10202204290300100a1a2000200120022003101622050d00200420033703282004200237032020042001370318200420003703102004101922023703382004101210152004428ed2eadc99adeb013703880141002105420221000340200021012005410171428ed2eadc99adeb01210041012105450d000b20042001370340200441406b22054101101e20052002100f20042903404201510d012004290348100b1a410021050b20064190016a2400200541016bad4220864283808080107c420220051b0f0b000bda06010d7f230041106b2107024020002000410020006b41037122046a22054f0d00200021022001210320040440200421060340200220032d00003a0000200341016a2103200241016a2102200641016b22060d000b0b200441016b4107490d000340200220032d00003a0000200241016a200341016a2d00003a0000200241026a200341026a2d00003a0000200241036a200341036a2d00003a0000200241046a200341046a2d00003a0000200241056a200341056a2d00003a0000200241066a200341066a2d00003a0000200241076a200341076a2d00003a0000200341086a2103200241086a22022005470d000b0b200541c00020046b220b417c71220c6a21020240200120046a22034103712204450440200220054d0d0120032101034020052001280200360200200141046a2101200541046a22052002490d000b0c010b2007410036020c2007410c6a2004722101410420046b22064101710440200120032d00003a0000410121080b20064102710440200120086a200320086a2f01003b01000b200320046b210620044103742109200728020c210a2002200541046a4b0440410020096b4118712108034020052201200a200976200641046a2206280200220a20087472360200200141046a2105200141086a2002490d000b0b41002108200741003a0008200741003a0006027f2004410146044041002101200741086a0c010b200641056a2d00002007200641046a2d000022013a0008410874210d4102210e200741066a0b210420052003410171047f2004200641046a200e6a2d00003a000020072d0006411074210820072d00080520010b41ff01712008200d7272410020096b41187174200a200976723602000b2003200c6a210102402002200b410371220520026a22064f0d002005220304400340200220012d00003a0000200141016a2101200241016a2102200341016b22030d000b0b200541016b4107490d000340200220012d00003a0000200241016a200141016a2d00003a0000200241026a200141026a2d00003a0000200241036a200141036a2d00003a0000200241046a200141046a2d00003a0000200241056a200141056a2d00003a0000200241066a200141066a2d00003a0000200241076a200141076a2d00003a0000200141086a2101200241086a22022006470d000b0b20000b0b82010100418080c0000b796465736372697074696f6e656e64706f696e746e616d656f776e6572706179746f726567697374657265645f617474616773757064617465645f6174000010000b0000000b00100008000000130010000400000017001000050000001c00100005000000210010000d0000002e00100004000000320010000a008b0c0e636f6e747261637473706563763000000000000000115468652066756c6c206c697374696e672e00000000000004696e666f0000000000000001000003e9000007d0000000094167656e74496e666f000000000000030000000000000000000000056f776e65720000000000000000000001000003e90000001300000003000000000000006557686572652074686973206167656e7420697320706169642e2052656164206f6e20697473206f776e2062792074686520696e64657865722c20776869636820646f6573206e6f740a6e656564207468652072657374206f6620746865207265636f72642e00000000000005706179746f0000000000000000000001000003e90000001300000003000000000000001f456469742065766572797468696e67206578636570742060706179746f602e000000000675706461746500000000000400000000000000046e616d65000000100000000000000008656e64706f696e7400000010000000000000000b6465736372697074696f6e0000000010000000000000000474616773000003ea0000001000000001000003e90000000200000003000000040000000000000000000000054572726f7200000000000008000000000000000e4e6f74496e697469616c69736564000000000001000000000000000b4e616d65546f6f4c6f6e670000000002000000000000000f456e64706f696e74546f6f4c6f6e67000000000300000000000000124465736372697074696f6e546f6f4c6f6e67000000000004000000000000000b546f6f4d616e79546167730000000005000000000000000a546167546f6f4c6f6e6700000000000600000000000000094e616d65456d70747900000000000007000000000000000d456e64706f696e74456d70747900000000000008000000010000000000000000000000094167656e74496e666f00000000000008000000000000000b6465736372697074696f6e00000000100000000000000008656e64706f696e740000001000000000000000046e616d650000001000000023436f6e74726f6c7320746865206c697374696e672e205472616e7366657261626c652e00000000056f776e6572000000000000130000008b57686572652063616c6c657273207061792e20496d6d757461626c6520e280942072657075746174696f6e20697320646572697665642066726f6d2074686973206164647265737327730a7061796d656e7420686973746f72792c20736f206368616e67696e6720697420776f756c642073696c656e746c7920726573657420746865207265636f72642e0000000005706179746f00000000000013000000000000000d726567697374657265645f617400000000000006000000000000000474616773000003ea00000010000000000000000a757064617465645f6174000000000006000000000000008852756e73206f6e63652c206174206465706c6f792074696d652e2054686520666163746f72792070617373657320746865206f70657261746f7227732064657461696c730a7374726169676874207468726f7567682c20736f2061206c697374696e672065786973747320746865206d6f6d656e742069747320636f6e747261637420646f65732e0000000d5f5f636f6e7374727563746f720000000000000600000000000000056f776e6572000000000000130000000000000005706179746f0000000000001300000000000000046e616d65000000100000000000000008656e64706f696e7400000010000000000000000b6465736372697074696f6e0000000010000000000000000474616773000003ea0000001000000000000000000000008948616e6420746865206c697374696e6720746f20736f6d656f6e6520656c73652e20546865207061796d656e74206164647265737320646f6573206e6f74206d6f76652c0a736f2074686520747261636b207265636f726420737461797320617474616368656420746f20776865726520746865206d6f6e65792061637475616c6c792077656e742e0000000000000e7472616e736665725f6f776e657200000000000100000000000000096e65775f6f776e65720000000000001300000001000003e90000000200000003001e11636f6e7472616374656e766d6574617630000000000000001a00000000006f0e636f6e74726163746d65746176300000000000000005727376657200000000000006312e39352e3000000000000000000008727373646b7665720000002f32362e312e3123386163313865666236383161316330623462383561333863356133383033303033343465336633390000530e636f6e74726163746d65746176300000000000000006636c6976657200000000002f32372e302e30233561376335666537363533306266343234383437376163383132666337353731343662393863633400"
+            }
+          },
+          "ext": "v0"
+        },
+        "live_until": 518400
+      }
+    ]
+  },
+  "events": []
+}

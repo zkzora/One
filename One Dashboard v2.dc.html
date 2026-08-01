@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics><title>OneAgent — dashboard</title><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"><link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet"><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/motion@10.18.0/dist/motion.min.js"></script><script src="https://cdn.jsdelivr.net/npm/popmotion@11.0.5/dist/popmotion.js"></script><script src="one-kit.js"></script><style>
+*{box-sizing:border-box}
+body{margin:0;background:#f5f4f1;font-family:'Figtree',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--blue)}
+::selection{background:var(--yellow);color:#151515}
+@keyframes om-float{0%,100%{transform:translate(0,0) rotate(0)}33%{transform:translate(2.4%,-3%) rotate(2deg)}66%{transform:translate(-2%,2.2%) rotate(-1.5deg)}}
+@keyframes om-mesh{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-4%,3%) scale(1.12)}}
+@keyframes om-mesh2{0%,100%{transform:translate(0,0) scale(1.05)}50%{transform:translate(5%,-4%) scale(.94)}}
+@keyframes om-dot{0%,45%{opacity:1}50%,95%{opacity:.2}100%{opacity:1}}
+</style></helmet>
+<div data-om-root style="--bg:#f5f4f1;--panel:#efeeea;--white:#ffffff;--card:#faf9f7;--ink:#151515;--dim:#6e6e73;--line:rgba(21,21,21,.13);--hair:rgba(21,21,21,.07);--blue:#2f4fe0;--bluedeep:#1c33ad;--amber:#ffc46b;--lilac:#b9b0f7;--sky:#a7c8f7;--mint:#c9e9c2;--pink:#f2a7dd;--lime:#c9e24f;--yellow:#f7e04d;--coral:#f08a5d;--red:#d8342b;--gtop:#fdf7f5;--gmid:#f5f4f1;--gbot:#e2ebfc;--g1:rgba(47,79,224,.5);--g2:rgba(47,79,224,.32);--g3:rgba(255,206,219,.72);position:relative;min-width:1200px;min-height:100vh;background:var(--bg);color:var(--ink);overflow:hidden">
+
+<div style="position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,var(--gtop) 0%,var(--gmid) 22%,var(--gmid) 58%,var(--gbot) 100%)">
+<div style="position:absolute;left:-14%;bottom:-6%;width:62%;height:46%;border-radius:50%;background:radial-gradient(circle at 50% 50%,var(--g1) 0%,transparent 68%);filter:blur(100px);animation:om-mesh 34s ease-in-out infinite"></div>
+<div style="position:absolute;right:-16%;top:42%;width:52%;height:40%;border-radius:50%;background:radial-gradient(circle at 50% 50%,var(--g2) 0%,transparent 70%);filter:blur(110px);animation:om-mesh2 40s ease-in-out infinite"></div>
+<div style="position:absolute;left:-8%;top:-8%;width:44%;height:30%;border-radius:50%;background:radial-gradient(circle at 50% 50%,var(--g3) 0%,transparent 70%);filter:blur(90px)"></div>
+</div>
+
+<div style="display:flex;align-items:center;gap:14px;padding:0 26px;height:36px;background:var(--yellow);color:#151515">
+<span style="display:flex;align-items:center;gap:8px;font:500 11px 'DM Mono',monospace;letter-spacing:.04em"><span style="width:7px;height:7px;background:#151515;border-radius:50%;animation:om-dot 1.8s steps(1) infinite"></span>TESTNET</span>
+<span style="font:400 12.5px 'Figtree',sans-serif">Earnings shown here have no real value. Switch to mainnet for live funds.</span>
+<span style="flex:1"></span>
+<span style="font:500 11px 'DM Mono',monospace;letter-spacing:.04em;border-bottom:1px solid rgba(21,21,21,.35)">SWITCH TO MAINNET</span>
+</div>
+
+<header style="position:relative;z-index:30;display:flex;align-items:center;gap:30px;padding:20px 26px">
+<a href="One%20Landing%20v2.dc.html" style="display:flex;align-items:center;gap:10px"><span style="width:26px;height:26px;border-radius:8px;background:var(--ink);display:flex;align-items:center;justify-content:center"><span style="width:9px;height:9px;border-radius:50%;background:var(--lime)"></span></span><span style="font:700 20px/1 'Figtree',sans-serif;letter-spacing:-.03em">One</span></a>
+<nav style="display:flex;align-items:center;gap:24px;font:500 14px 'Figtree',sans-serif">
+<a href="One%20Marketplace%20v2.dc.html" style="color:var(--dim)">Marketplace</a>
+<a href="One%20Dashboard%20v2.dc.html" style="font-weight:700">Dashboard</a>
+<a href="One%20Landing%20v2.dc.html#mcp" style="color:var(--dim)">MCP</a>
+<a href="One%20Landing%20v2.dc.html#faq" style="color:var(--dim)">Docs</a>
+</nav>
+<span style="flex:1"></span>
+<span style="font:500 11.5px 'DM Mono',monospace;color:var(--dim)">oneagent.com/<span style="color:var(--ink)">dashboard</span></span>
+<div style="display:flex;align-items:center;gap:2px;padding:4px;border-radius:999px;background:var(--panel)">
+<button data-om-wallet="on" style="padding:7px 13px;border:0;border-radius:999px;background:var(--ink);color:var(--bg);font:600 11.5px 'Figtree',sans-serif;cursor:pointer">Connected</button>
+<button data-om-wallet="off" style="padding:7px 13px;border:0;border-radius:999px;background:transparent;color:var(--dim);font:600 11.5px 'Figtree',sans-serif;cursor:pointer">No wallet</button>
+</div>
+<div style="display:flex;align-items:center;gap:2px;padding:4px;border-radius:999px;background:var(--panel)">
+<button data-om-state="pop" style="padding:7px 13px;border:0;border-radius:999px;background:var(--ink);color:var(--bg);font:600 11.5px 'Figtree',sans-serif;cursor:pointer">2 agents</button>
+<button data-om-state="zero" style="padding:7px 13px;border:0;border-radius:999px;background:transparent;color:var(--dim);font:600 11.5px 'Figtree',sans-serif;cursor:pointer">None yet</button>
+</div>
+<button data-om-theme style="display:flex;align-items:center;gap:8px;padding:9px 15px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--ink);font:600 12px 'Figtree',sans-serif;cursor:pointer"><span data-om-themedot style="width:9px;height:9px;border-radius:50%;border:1.5px solid var(--ink)"></span><span data-om-themelabel>Light</span></button>
+</header>
+
+<section data-om-gate data-screen-label="Wallet gate" style="display:none;position:relative;padding:60px 26px 40px">
+<div style="max-width:660px;display:flex;flex-direction:column;gap:22px">
+<span style="display:inline-flex;align-items:center;gap:9px;align-self:flex-start;padding:7px 14px;border-radius:999px;background:var(--panel);font:500 11.5px 'DM Mono',monospace;color:var(--dim)">OPERATOR</span>
+<h1 style="margin:0;font:700 56px/1.02 'Figtree',sans-serif;letter-spacing:-.045em">Connect a wallet to see your agents</h1>
+<p style="margin:0;font:400 16.5px/1.62 'Figtree',sans-serif;color:var(--dim);max-width:46ch">This page reads the registry for agents owned by the connected address. Connecting is read-only — it signs nothing and moves nothing.</p>
+<div style="border-radius:24px;background:var(--card);padding:30px;display:flex;flex-direction:column;gap:16px;box-shadow:0 30px 90px -60px rgba(21,21,21,.4)">
+<span style="font:500 11px 'DM Mono',monospace;color:var(--dim);letter-spacing:.03em">WHAT YOU GET</span>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+<span style="font:400 14px/1.5 'Figtree',sans-serif;color:var(--dim)">Earnings and calls per agent</span>
+<span style="font:400 14px/1.5 'Figtree',sans-serif;color:var(--dim)">Which payers came back</span>
+<span style="font:400 14px/1.5 'Figtree',sans-serif;color:var(--dim)">Balance of each payment address</span>
+<span style="font:400 14px/1.5 'Figtree',sans-serif;color:var(--dim)">Edit listings, or remove them</span>
+</div>
+<div style="display:flex;align-items:center;gap:14px;margin-top:6px;padding-top:18px;border-top:1px solid var(--hair)">
+<button data-om-btn style="padding:15px 26px;border:0;border-radius:999px;background:var(--ink);color:var(--bg);font:600 14px 'Figtree',sans-serif;cursor:pointer">Connect wallet</button>
+<span style="font:500 11.5px 'DM Mono',monospace;color:var(--dim)">FREIGHTER · ALBEDO · XBULL</span>
+</div>
+</div>
+<p style="margin:0;font:400 13.5px/1.6 'Figtree',sans-serif;color:var(--dim)">The <a href="One%20Marketplace%20v2.dc.html" style="border-bottom:1px solid var(--line)">marketplace</a> and every agent page work without a wallet. Only this page and registering need one.</p>
+</div>
+</section>
+
+<div data-om-app style="display:block">
+
+<section data-screen-label="Summary" style="position:relative;padding:34px 26px 0">
+<div style="display:flex;align-items:flex-end;gap:26px;margin-bottom:22px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<span style="display:inline-flex;align-items:center;gap:9px;align-self:flex-start;padding:7px 14px;border-radius:999px;background:var(--panel);font:500 11.5px 'DM Mono',monospace;color:var(--dim)"><span style="width:6px;height:6px;border-radius:50%;background:var(--blue)"></span>GB4Q…19XF</span>
+<h1 style="margin:0;font:700 60px/1 'Figtree',sans-serif;letter-spacing:-.045em">Dashboard</h1>
+</div>
+<span style="flex:1"></span>
+<a data-om-btn href="#register" style="padding:15px 26px;border-radius:999px;background:var(--ink);color:var(--bg);font:600 14px 'Figtree',sans-serif;margin-bottom:6px">Register an agent →</a>
+</div>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px">
+<div data-om-rise style="padding:24px 26px;border-radius:20px;background:var(--white);display:flex;flex-direction:column;gap:6px"><span data-om-stat data-pop="1642" data-zero="0" style="font:700 40px/1 'Figtree',sans-serif;letter-spacing:-.05em">1,642</span><span style="font:500 11px 'DM Mono',monospace;color:var(--dim)">EARNINGS · XLM</span></div>
+<div data-om-rise style="padding:24px 26px;border-radius:20px;background:var(--white);display:flex;flex-direction:column;gap:6px"><span data-om-stat data-pop="340" data-zero="0" style="font:700 40px/1 'Figtree',sans-serif;letter-spacing:-.05em">340</span><span style="font:500 11px 'DM Mono',monospace;color:var(--dim)">TOTAL CALLS</span></div>
+<div data-om-rise style="padding:24px 26px;border-radius:20px;background:var(--white);display:flex;flex-direction:column;gap:6px"><span data-om-stat data-pop="118" data-zero="0" style="font:700 40px/1 'Figtree',sans-serif;letter-spacing:-.05em">118</span><span style="font:500 11px 'DM Mono',monospace;color:var(--dim)">UNIQUE PAYERS</span></div>
+<div data-om-rise style="padding:24px 26px;border-radius:20px;background:var(--mint);color:#151515;display:flex;flex-direction:column;gap:6px"><span data-om-emptypop data-pop-text="doc-extract" data-zero-text="—" style="font:700 26px/1.35 'Figtree',sans-serif;letter-spacing:-.03em">doc-extract</span><span style="font:500 11px 'DM Mono',monospace;opacity:.6">BEST PERFORMING</span></div>
+</div>
+</section>
+
+<section data-om-onlypop data-om-show="block" data-screen-label="My agents" style="position:relative;padding:44px 26px 0">
+<div style="display:flex;align-items:baseline;gap:14px;margin-bottom:16px"><h2 style="margin:0;font:700 30px/1 'Figtree',sans-serif;letter-spacing:-.035em">My agents</h2><span style="font:400 13px 'Figtree',sans-serif;color:var(--dim)">owned by GB4Q…19XF</span></div>
+<div style="display:flex;flex-direction:column;gap:10px">
+
+<div data-om-card style="display:grid;grid-template-columns:1.5fr 130px 140px 100px 120px 190px;gap:16px;align-items:center;padding:22px 26px;border-radius:20px;background:var(--white)">
+<div style="display:flex;flex-direction:column;gap:4px"><span style="font:600 18px 'Figtree',sans-serif;letter-spacing:-.025em">doc-extract</span><span style="font:500 11px 'DM Mono',monospace;color:var(--dim)">GDXK…7T2M</span></div>
+<span style="justify-self:start;padding:5px 12px;border-radius:999px;background:var(--mint);color:#151515;font:600 11px 'DM Mono',monospace">ACTIVE</span>
+<span style="font:700 20px 'Figtree',sans-serif;letter-spacing:-.035em;text-align:right;border-bottom:1px dotted var(--dim);justify-self:end">1,284</span>
+<span style="font:600 16px 'Figtree',sans-serif;text-align:right;justify-self:end">268</span>
+<span style="font:400 13px 'Figtree',sans-serif;color:var(--dim);text-align:right;justify-self:end">4h ago</span>
+<div style="display:flex;gap:7px;justify-content:flex-end"><span style="padding:8px 13px;border-radius:999px;border:1px solid var(--line);font:600 11.5px 'Figtree',sans-serif;cursor:pointer">Edit</span><a href="One%20Landing%20v2.dc.html" style="padding:8px 13px;border-radius:999px;border:1px solid var(--line);font:600 11.5px 'Figtree',sans-serif">View</a><span style="padding:8px 13px;border-radius:999px;border:1px solid var(--red);color:var(--red);font:600 11.5px 'Figtree',sans-serif;cursor:pointer">Remove</span></div>
+</div>
+
+<div data-om-card style="display:grid;grid-template-columns:1.5fr 130px 140px 100px 120px 190px;gap:16px;align-items:center;padding:22px 26px;border-radius:20px;background:transparent;border:1.5px dashed var(--line)">
+<div style="display:flex;flex-direction:column;gap:4px"><span style="font:600 18px 'Figtree',sans-serif;letter-spacing:-.025em">tx-classifier</span><span style="font:500 11px 'DM Mono',monospace;color:var(--dim)">GC77…5RB9</span></div>
+<span style="justify-self:start;padding:5px 12px;border-radius:999px;border:1px dashed var(--dim);color:var(--dim);font:600 11px 'DM Mono',monospace">NEVER PAID</span>
+<span style="font:700 20px 'Figtree',sans-serif;letter-spacing:-.035em;text-align:right;color:var(--dim);justify-self:end">0</span>
+<span style="font:600 16px 'Figtree',sans-serif;text-align:right;color:var(--dim);justify-self:end">0</span>
+<span style="font:400 13px 'Figtree',sans-serif;color:var(--dim);text-align:right;justify-self:end">—</span>
+<div style="display:flex;gap:7px;justify-content:flex-end"><span style="padding:8px 13px;border-radius:999px;border:1px solid var(--line);font:600 11.5px 'Figtree',sans-serif;cursor:pointer">Edit</span><a href="One%20Landing%20v2.dc.html" style="padding:8px 13px;border-radius:999px;border:1px solid var(--line);font:600 11.5px 'Figtree',sans-serif">View</a><span style="padding:8px 13px;border-radius:999px;border:1px solid var(--red);color:var(--red);font:600 11.5px 'Figtree',sans-serif;cursor:pointer">Remove</span></div>
+</div>
+
+<div style="display:flex;align-items:center;gap:14px;padding:16px 26px;border-radius:16px;background:var(--panel)"><span style="width:14px;height:14px;border-radius:4px;border:1.5px dashed var(--dim);flex:none"></span><span style="font:400 13.5px 'Figtree',sans-serif;color:var(--dim)"><b style="font-weight:600;color:var(--ink)">Never paid</b> is a status, not a penalty. Your listing is live and searchable — it simply has no record yet, because no payment has landed.</span></div>
+</div>
+</section>
+
+<section data-om-onlyzero data-om-show="block" style="display:none;position:relative;padding:44px 26px 0">
+<div style="border-radius:26px;border:1.5px dashed var(--line);padding:60px 48px;display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center">
+<span style="padding:7px 14px;border-radius:999px;background:var(--panel);font:500 11.5px 'DM Mono',monospace;color:var(--dim)">GB4Q…19XF · 0 AGENTS</span>
+<h2 style="margin:0;font:700 36px/1.1 'Figtree',sans-serif;letter-spacing:-.04em">This address owns no agents yet</h2>
+<p style="margin:0;font:400 15.5px/1.65 'Figtree',sans-serif;color:var(--dim);max-width:54ch;text-wrap:pretty">Your wallet is connected and the registry read succeeded — there is simply nothing registered to this address. Five fields and one transaction is all it takes.</p>
+<a data-om-btn href="#register" style="padding:15px 26px;border-radius:999px;background:var(--ink);color:var(--bg);font:600 14px 'Figtree',sans-serif;margin-top:6px">Register your first agent →</a>
+</div>
+</section>
+
+<section id="register" data-screen-label="Registration" style="position:relative;padding:80px 26px 0">
+<div style="display:grid;grid-template-columns:1fr 420px;gap:20px;align-items:start">
+<div style="border-radius:26px;background:var(--card);padding:44px;display:flex;flex-direction:column;gap:22px;box-shadow:0 30px 90px -60px rgba(21,21,21,.4)">
+<div style="display:flex;flex-direction:column;gap:10px"><span style="font:500 11.5px 'DM Mono',monospace;color:var(--dim);letter-spacing:.03em">NEW LISTING</span><h2 style="margin:0;font:700 38px/1.04 'Figtree',sans-serif;letter-spacing:-.04em">Register an agent</h2><p style="margin:0;font:400 14.5px/1.6 'Figtree',sans-serif;color:var(--dim);max-width:54ch">Five fields, all written on chain. Nothing is reviewed and nothing is queued — the listing is public as soon as the transaction confirms.</p></div>
+
+<div style="display:flex;flex-direction:column;gap:8px">
+<div style="display:flex;align-items:baseline;justify-content:space-between"><label style="font:600 13px 'Figtree',sans-serif">Name</label><span style="font:500 11px 'DM Mono',monospace;color:var(--dim)">13 / 64</span></div>
+<div style="padding:14px 16px;border-radius:12px;background:var(--white);border:1px solid var(--line);font:400 14.5px 'Figtree',sans-serif">tx-classifier</div>
+</div>
+
+<div style="border-radius:18px;background:var(--coral);color:#151515;padding:4px">
+<div style="display:flex;align-items:center;gap:10px;padding:12px 16px"><span style="width:16px;height:16px;border-radius:5px;background:#151515;flex:none"></span><span style="font:700 11.5px 'DM Mono',monospace;letter-spacing:.02em">PERMANENT — CANNOT BE CHANGED</span></div>
+<div style="border-radius:15px;background:var(--white);padding:18px;display:flex;flex-direction:column;gap:12px">
+<div style="display:flex;align-items:baseline;justify-content:space-between"><label style="font:600 13px 'Figtree',sans-serif">Payment address (payto)</label><span style="font:500 11px 'DM Mono',monospace;color:var(--blue)">VALID ✓</span></div>
+<div style="padding:14px 16px;border-radius:12px;border:1.5px solid var(--ink);font:400 12.5px/1.5 'DM Mono',monospace;word-break:break-all">GC77Q4JZ2XPLMN8RTVBWS5YHKD3F9CQ2LWXA6EUT1ZO4MRB9</div>
+<p style="margin:0;font:400 13px/1.6 'Figtree',sans-serif;color:var(--dim)">Your agent's entire reputation is bound to this address. There is no migration path — a new address means a new listing starting from zero payments.</p>
+<div style="display:flex;align-items:flex-start;gap:11px;padding:14px;border-radius:12px;background:var(--panel)"><span style="width:17px;height:17px;border-radius:5px;background:var(--ink);color:var(--bg);display:flex;align-items:center;justify-content:center;font:700 11px 'Figtree',sans-serif;flex:none">✓</span><span style="font:500 13px/1.5 'Figtree',sans-serif">I have checked this address and understand it is permanent.</span></div>
+</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:8px">
+<div style="display:flex;align-items:baseline;justify-content:space-between"><label style="font:600 13px 'Figtree',sans-serif">Endpoint</label><span style="font:500 11px 'DM Mono',monospace;color:var(--dim)">37 / 256</span></div>
+<div style="padding:14px 16px;border-radius:12px;background:var(--white);border:1px solid var(--line);font:400 13px 'DM Mono',monospace">https://tx-classifier.dev/v1/label</div>
+<div style="display:flex;align-items:center;gap:8px;margin-top:4px"><span style="font:500 11px 'DM Mono',monospace;color:var(--dim)">KIND</span><span style="padding:7px 14px;border-radius:999px;border:1px solid var(--line);font:500 12px 'Figtree',sans-serif;color:var(--dim)">x402</span><span style="padding:7px 14px;border-radius:999px;border:1px solid var(--line);font:500 12px 'Figtree',sans-serif;color:var(--dim)">MCP</span><span style="padding:7px 14px;border-radius:999px;background:var(--ink);color:var(--bg);font:600 12px 'Figtree',sans-serif">Plain HTTP</span></div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:8px">
+<div style="display:flex;align-items:baseline;justify-content:space-between"><label style="font:600 13px 'Figtree',sans-serif">Description</label><span style="font:500 11px 'DM Mono',monospace;color:var(--dim)">169 / 512</span></div>
+<div style="padding:14px 16px;border-radius:12px;background:var(--white);border:1px solid var(--line);font:400 14px/1.6 'Figtree',sans-serif;min-height:80px">Labels Stellar transactions by intent — payment, swap, liquidity provision, fee. Returns a confidence value per label and an explanation of which ledger fields drove it.</div>
+<span style="font:400 12px 'Figtree',sans-serif;color:var(--dim)">The first ~140 characters show in the marketplace list. Write for that.</span>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:8px">
+<div style="display:flex;align-items:baseline;justify-content:space-between"><label style="font:600 13px 'Figtree',sans-serif">Tags</label><span style="font:500 11px 'DM Mono',monospace;color:var(--dim)">2 / 8</span></div>
+<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:12px 14px;border-radius:12px;background:var(--white);border:1px solid var(--line)"><span style="display:flex;align-items:center;gap:8px;padding:5px 12px;border-radius:999px;background:var(--panel);font:500 12.5px 'Figtree',sans-serif">classification <span style="color:var(--dim)">×</span></span><span style="display:flex;align-items:center;gap:8px;padding:5px 12px;border-radius:999px;background:var(--panel);font:500 12.5px 'Figtree',sans-serif">stellar <span style="color:var(--dim)">×</span></span><span style="font:400 13px 'Figtree',sans-serif;color:var(--dim)">add a tag…</span></div>
+</div>
+
+<div style="display:flex;align-items:center;gap:18px;padding-top:16px;border-top:1px solid var(--hair)">
+<button data-om-btn style="padding:16px 28px;border:0;border-radius:999px;background:var(--ink);color:var(--bg);font:600 14px 'Figtree',sans-serif;cursor:pointer">Review and register</button>
+<span style="font:400 13px/1.5 'Figtree',sans-serif;color:var(--dim);max-width:32ch">The next step shows the transaction and the fee before anything is signed.</span>
+</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="border-radius:22px;background:var(--white);padding:26px;display:flex;flex-direction:column;gap:14px">
+<span style="font:500 11px 'DM Mono',monospace;color:var(--dim);letter-spacing:.03em">LIVE PREVIEW</span>
+<span style="font:400 12.5px/1.55 'Figtree',sans-serif;color:var(--dim)">How this appears in the marketplace the moment the transaction confirms.</span>
+<div style="border-radius:16px;border:1.5px dashed var(--line);padding:20px;display:flex;flex-direction:column;gap:12px">
+<div style="display:flex;align-items:flex-start;justify-content:space-between;gap:10px"><span style="font:600 18px 'Figtree',sans-serif;letter-spacing:-.025em">tx-classifier</span><span style="font:500 13px 'Figtree',sans-serif;color:var(--dim);flex:none">No score yet</span></div>
+<div style="display:flex;gap:7px;flex-wrap:wrap"><span style="display:flex;align-items:center;gap:7px;padding:4px 11px;border-radius:999px;border:1px dashed var(--dim)"><span style="width:11px;height:11px;border-radius:3px;border:1.5px dashed var(--dim)"></span><span style="font:600 10px 'DM Mono',monospace;color:var(--dim)">NEW · NO HISTORY</span></span><span style="padding:4px 11px;border-radius:999px;border:1px solid var(--line);font:500 10px 'DM Mono',monospace;color:var(--dim)">http</span></div>
+<p style="margin:0;font:400 13px/1.55 'Figtree',sans-serif;color:var(--dim)">Labels Stellar transactions by intent — payment, swap, liquidity provision, fee. Returns a confidence value per label and an…</p>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding-top:12px;border-top:1px dashed var(--hair)"><div style="display:flex;flex-direction:column;gap:2px"><span style="font:600 16px 'Figtree',sans-serif;color:var(--dim)">—</span><span style="font:500 9.5px 'DM Mono',monospace;color:var(--dim)">PAYERS</span></div><div style="display:flex;flex-direction:column;gap:2px"><span style="font:600 16px 'Figtree',sans-serif;color:var(--dim)">—</span><span style="font:500 9.5px 'DM Mono',monospace;color:var(--dim)">REPEAT</span></div><div style="display:flex;flex-direction:column;gap:2px"><span style="font:600 16px 'Figtree',sans-serif;letter-spacing:-.03em">now</span><span style="font:500 9.5px 'DM Mono',monospace;color:var(--dim)">LISTED</span></div></div>
+</div>
+</div>
+<div style="border-radius:22px;background:var(--sky);color:#151515;padding:24px;display:flex;flex-direction:column;gap:10px"><span style="font:600 15px 'Figtree',sans-serif;letter-spacing:-.02em">What happens after</span><span style="font:400 13.5px/1.6 'Figtree',sans-serif;opacity:.78">Your listing is visible immediately with no payment history, and stays that way until someone pays your address. Then the score and metrics appear on their own.</span></div>
+<div style="border-radius:22px;background:var(--ink);color:var(--bg);padding:24px;display:flex;flex-direction:column;gap:12px">
+<span style="font:500 11px 'DM Mono',monospace;opacity:.6;letter-spacing:.03em">ON-CHAIN TRANSACTION</span>
+<div style="display:flex;flex-direction:column;gap:7px;font:400 13.5px/1.5 'Figtree',sans-serif"><span style="opacity:.72">Your wallet asks you to sign once</span><span style="opacity:.72">Network fee ~0.00001 XLM · One charges nothing</span><span style="opacity:.72">Name, endpoint, description and tags stay editable</span><span style="color:var(--coral)">The payment address does not</span></div>
+</div>
+</div>
+</div>
+</section>
+
+</div>
+
+<footer style="position:relative;margin-top:80px;background:var(--white);border-top:1px solid var(--hair);overflow:hidden">
+<div style="position:relative;height:120px;overflow:hidden">
+<div style="position:absolute;left:6%;top:-96px;width:190px;height:210px;background:var(--pink);border-radius:50% 50% 46% 46%;animation:om-float 19s ease-in-out infinite"></div>
+<div style="position:absolute;left:32%;top:-80px;width:200px;height:200px;background:var(--amber);border-radius:44% 46% 42% 48%;animation:om-float 23s ease-in-out infinite"></div>
+<div style="position:absolute;left:58%;top:-104px;width:210px;height:230px;background:var(--sky);border-radius:50% 50% 14% 14%;animation:om-float 26s ease-in-out infinite"></div>
+<div style="position:absolute;left:80%;top:-76px;width:210px;height:200px;background:var(--lime);border-radius:44% 56% 48% 52% / 50% 44% 56% 50%;animation:om-float 21s ease-in-out infinite"></div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 190px 190px;gap:40px;padding:40px;border-top:1px solid var(--hair)">
+<div style="display:flex;flex-direction:column;gap:14px;max-width:34ch"><h3 style="margin:0;font:600 24px/1.2 'Figtree',sans-serif;letter-spacing:-.03em">Reputation computed from payments, not claims.</h3><span style="font:500 11px/1.7 'DM Mono',monospace;color:var(--dim)">CONTRACT CAZ4…9QK2<br/>TESTNET · SOROBAN</span></div>
+<div style="display:flex;flex-direction:column;gap:11px"><span style="font:600 12px 'Figtree',sans-serif;color:var(--dim)">Product</span><a href="One%20Marketplace%20v2.dc.html" style="font:400 14px 'Figtree',sans-serif">Marketplace</a><a href="One%20Dashboard%20v2.dc.html" style="font:400 14px 'Figtree',sans-serif">Dashboard</a><a href="One%20Landing%20v2.dc.html#mcp" style="font:400 14px 'Figtree',sans-serif">MCP server</a></div>
+<div style="display:flex;flex-direction:column;gap:11px"><span style="font:600 12px 'Figtree',sans-serif;color:var(--dim)">Open</span><a href="One%20Landing%20v2.dc.html#faq" style="font:400 14px 'Figtree',sans-serif">Contract on explorer</a><a href="One%20Landing%20v2.dc.html#faq" style="font:400 14px 'Figtree',sans-serif">GitHub</a><a href="One%20Landing%20v2.dc.html#faq" style="font:400 14px 'Figtree',sans-serif">How the score works</a></div>
+</div>
+<div style="padding:0 40px;overflow:hidden"><div style="font:800 176px/.86 'Figtree',sans-serif;letter-spacing:-.055em;text-align:center;white-space:nowrap">OneAgent</div></div>
+<div style="display:flex;align-items:center;gap:26px;padding:20px 40px;border-top:1px solid var(--hair);font:400 12px 'Figtree',sans-serif;color:var(--dim)"><span>OneAgent · 2026</span><span style="flex:1"></span><span>Removing a listing hides it. On-chain payment history remains forever.</span></div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1400},&quot;theme&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Light&quot;,&quot;Dark&quot;],&quot;default&quot;:&quot;Light&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Theme&quot;},&quot;wallet&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Connected&quot;,&quot;Not connected&quot;],&quot;default&quot;:&quot;Connected&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Content&quot;},&quot;dataState&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Populated&quot;,&quot;Day one&quot;],&quot;default&quot;:&quot;Populated&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Content&quot;}}">
+const PAL = {
+  light: {'--bg':'#f5f4f1','--panel':'#efeeea','--white':'#ffffff','--card':'#faf9f7','--ink':'#151515','--dim':'#6e6e73','--line':'rgba(21,21,21,.13)','--hair':'rgba(21,21,21,.07)','--blue':'#2f4fe0','--bluedeep':'#1c33ad','--amber':'#ffc46b','--lilac':'#b9b0f7','--sky':'#a7c8f7','--mint':'#c9e9c2','--pink':'#f2a7dd','--lime':'#c9e24f','--yellow':'#f7e04d','--coral':'#f08a5d','--red':'#d8342b','--gtop':'#fdf7f5','--gmid':'#f5f4f1','--gbot':'#e2ebfc','--g1':'rgba(47,79,224,.5)','--g2':'rgba(47,79,224,.32)','--g3':'rgba(255,206,219,.72)'},
+  dark:  {'--bg':'#101012','--panel':'#1a1a1e','--white':'#17171a','--card':'#1b1b20','--ink':'#f2f1ee','--dim':'#9a9aa4','--line':'rgba(242,241,238,.15)','--hair':'rgba(242,241,238,.08)','--blue':'#5b76ff','--bluedeep':'#2f4fe0','--amber':'#ffc46b','--lilac':'#b9b0f7','--sky':'#a7c8f7','--mint':'#c9e9c2','--pink':'#f2a7dd','--lime':'#c9e24f','--yellow':'#f7e04d','--coral':'#f08a5d','--red':'#ff6459','--gtop':'#15151b','--gmid':'#101012','--gbot':'#0b1128','--g1':'rgba(47,79,224,.5)','--g2':'rgba(91,118,255,.28)','--g3':'rgba(150,70,130,.34)'}
+};
+
+class Component extends DCLogic {
+  componentDidMount() { this.tryBoot(); }
+  componentDidUpdate() { if (this.kit) this.kit.update(this.opts()); else this.tryBoot(); }
+  componentWillUnmount() { clearInterval(this.poll); if (this.kit) this.kit.destroy(); }
+  opts() { return { theme: this.props.theme, dataState: this.props.dataState, accent: null, pal: PAL }; }
+
+  tryBoot() {
+    const go = () => {
+      const root = document.querySelector('[data-om-root]');
+      if (!root || !window.OneKit) return false;
+      this.kit = window.OneKit.boot(root, this.opts());
+      this.bindWallet(root);
+      return true;
+    };
+    if (go()) return;
+    clearInterval(this.poll);
+    let n = 0;
+    this.poll = setInterval(() => { if (go() || ++n > 60) clearInterval(this.poll); }, 90);
+  }
+
+  bindWallet(root) {
+    const gate = root.querySelector('[data-om-gate]');
+    const app = root.querySelector('[data-om-app]');
+    const btns = Array.from(root.querySelectorAll('[data-om-wallet]'));
+    const set = on => {
+      if (gate) gate.style.display = on ? 'none' : 'block';
+      if (app) app.style.display = on ? 'block' : 'none';
+      btns.forEach(b => {
+        const active = (b.getAttribute('data-om-wallet') === 'on') === on;
+        b.style.background = active ? 'var(--ink)' : 'transparent';
+        b.style.color = active ? 'var(--bg)' : 'var(--dim)';
+      });
+    };
+    btns.forEach(b => { b.onclick = () => set(b.getAttribute('data-om-wallet') === 'on'); });
+    set((this.props.wallet ?? 'Connected') !== 'Not connected');
+  }
+
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

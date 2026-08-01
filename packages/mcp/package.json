@@ -1,0 +1,40 @@
+{
+  "name": "oneagent-mcp",
+  "version": "0.1.0",
+  "description": "Read-only MCP server for the One agent registry on Stellar",
+  "type": "module",
+  "bin": {
+    "oneagent-mcp": "./dist/index.cjs"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "node build.mjs",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "dev": "tsx src/index.ts"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "^1.22.0",
+    "typescript": "^5.9.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zkzora/One.git",
+    "directory": "packages/mcp"
+  },
+  "homepage": "https://github.com/zkzora/One#readme",
+  "keywords": [
+    "mcp",
+    "stellar",
+    "soroban",
+    "ai-agents",
+    "reputation",
+    "model-context-protocol"
+  ],
+  "engines": {
+    "node": ">=20"
+  }
+}

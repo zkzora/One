@@ -1,0 +1,22 @@
+{
+  "name": "one",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace web",
+    "build": "npm run build --workspace web",
+    "build:contracts": "stellar contract build",
+    "test": "npm run test:contracts && npm run test:indexer",
+    "test:contracts": "cargo test",
+    "test:indexer": "tsx --test packages/indexer/src/*.test.ts",
+    "design:port": "node scripts/port-designs.mjs",
+    "chain:read": "tsx scripts/read-chain.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.1",
+    "tsx": "^4.23.1"
+  }
+}
