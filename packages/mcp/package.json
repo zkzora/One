@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@modelcontextprotocol/sdk": "^1.22.0",
+    "@one/indexer": "*",
     "typescript": "^5.9.0"
   },
   "license": "MIT",
