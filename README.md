@@ -112,6 +112,9 @@ Testnet ids are in `deployments/testnet.json`.
 ## Not done yet
 
 - The dashboard does not connect a wallet or submit a registration
+- An unknown agent id renders the 404 page but answers HTTP 200. The shell is
+  sent before the chain read resolves, so the status is already committed by the
+  time we know the id is bad
 - `EARNINGS` and `TOTAL CALLS` on the dashboard are still the design's sample
   figures. They sit behind the wallet gate, so nobody sees them, but they must
   be wired to real data before wallet support lands

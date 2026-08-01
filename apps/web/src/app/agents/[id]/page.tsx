@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PaymentHistory } from "@/components/payment-history";
@@ -7,21 +8,7 @@ import {
   explorerAccount,
   explorerContract,
   getAgentDetail,
-  getAgents,
 } from "@/lib/one";
-
-/**
- * Pre-render a page per registered agent.
- *
- * Also required for correctness here: with Cache Components, `params` counts as
- * a runtime API unless the route supplies at least one sample, and a route that
- * reads runtime APIs cannot be prerendered. Agents registered after a build
- * still resolve on demand.
- */
-export async function generateStaticParams() {
-  const agents = await getAgents();
-  return agents.map((agent) => ({ id: agent.contract }));
-}
 
 export async function generateMetadata({
   params,
@@ -33,7 +20,29 @@ export async function generateMetadata({
   return { title: detail?.agent.name ?? "Agent" };
 }
 
-export default async function Page({ params }: { params: Promise<{ id: string }> }) {
+/**
+ * Which agent is being viewed is runtime data, deliberately.
+ *
+ * The obvious alternative is `generateStaticParams` listing every registered
+ * agent, and it was that until it wedged the build: with Cache Components an
+ * empty return is a build error, so a registry nobody has registered with yet —
+ * day one, exactly — cannot be built at all. It also made every deploy depend on
+ * a Stellar read succeeding from the build machine, and pinned the set of
+ * viewable pages to whoever had registered at build time.
+ *
+ * So the shell is prerendered and the agent loads per request instead. The reads
+ * are still cached (`use cache` in lib/one), so this costs a chain round trip
+ * per cache window, not per visitor.
+ */
+export default function Page({ params }: { params: Promise<{ id: string }> }) {
+  return (
+    <Suspense fallback={<Loading />}>
+      <Detail params={params} />
+    </Suspense>
+  );
+}
+
+async function Detail({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const detail = await getAgentDetail(id);
 
@@ -250,6 +259,52 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
         </p>
       </section>
     </>
+  );
+}
+
+/**
+ * Shown while the chain read resolves.
+ *
+ * It holds the shape of the real page rather than centring a spinner, so the
+ * layout does not jump when the data lands.
+ */
+function Loading() {
+  return (
+    <section style={{ padding: "34px 26px 120px" }}>
+      <Link
+        href="/agents"
+        style={{ font: "500 13px 'Figtree',sans-serif", color: "var(--dim)" }}
+      >
+        ← All agents
+      </Link>
+      <div
+        style={{
+          marginTop: "18px",
+          height: "50px",
+          width: "min(340px,70%)",
+          borderRadius: "12px",
+          background: "var(--panel)",
+        }}
+      />
+      <div
+        style={{
+          marginTop: "16px",
+          height: "17px",
+          width: "min(560px,90%)",
+          borderRadius: "8px",
+          background: "var(--panel)",
+        }}
+      />
+      <p
+        style={{
+          margin: "26px 0 0",
+          font: "500 11px 'DM Mono',monospace",
+          color: "var(--dim)",
+        }}
+      >
+        READING THE CHAIN
+      </p>
+    </section>
   );
 }
 
