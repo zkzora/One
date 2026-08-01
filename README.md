@@ -27,6 +27,7 @@ contracts/factory    deploys agents, indexes them, one listing per payto
 packages/indexer     chain reads, reputation, risk signals
 packages/mcp         read-only MCP server (published as oneagent-mcp)
 apps/web             Next.js 16 site
+designs/             Claude Design exports, the source the pages are built from
 scripts/             design porting and a chain read/smoke script
 deployments/         deployed contract ids per network
 ```
@@ -91,7 +92,7 @@ See `packages/mcp/README.md`.
 ## Design files
 
 `apps/web/src/generated/*` is **generated, do not edit by hand.** The pages are
-ported from the Claude Design exports (`One *.dc.html`) by
+ported from the Claude Design exports in `designs/` by
 `scripts/dc-to-react.mjs`, which rewrites inline styles into JSX, strips the
 design tool's preview switchers, wires its state markers to real chain data, and
 splits the shared shell out of each page.

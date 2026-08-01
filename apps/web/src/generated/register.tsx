@@ -1,6 +1,6 @@
 /* eslint-disable */
 // GENERATED, do not edit.
-// Ported verbatim from "One Dashboard v2.dc.html" by scripts/dc-to-react.mjs (part: register).
+// Ported verbatim from "designs/One Dashboard v2.dc.html" by scripts/dc-to-react.mjs (part: register).
 // Markup and inline styles are the designer's; nothing here was redesigned.
 
 export function Register() {

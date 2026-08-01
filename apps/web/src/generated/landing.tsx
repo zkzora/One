@@ -1,6 +1,6 @@
 /* eslint-disable */
 // GENERATED, do not edit.
-// Ported verbatim from "One Landing v2.dc.html" by scripts/dc-to-react.mjs (part: main).
+// Ported verbatim from "designs/One Landing v2.dc.html" by scripts/dc-to-react.mjs (part: main).
 // Markup and inline styles are the designer's; nothing here was redesigned.
 
 /** Figures the design displays, supplied by the caller from chain reads. */
