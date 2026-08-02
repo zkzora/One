@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { Chrome } from "@/generated/chrome";
+import { ScrollReset } from "@/components/scroll-reset";
 import { ThemeScript } from "@/components/theme-toggle";
 import "./globals.css";
 
@@ -37,6 +39,11 @@ export default function RootLayout({
         <ThemeScript />
       </head>
       <body>
+        {/* usePathname counts as runtime data during prerender, so the reader
+            sits in its own boundary; it renders nothing either way. */}
+        <Suspense>
+          <ScrollReset />
+        </Suspense>
         {/* Banner, header and footer live here so all three routes share one shell. */}
         <Chrome>{children}</Chrome>
       </body>

@@ -305,6 +305,30 @@ body = body.replace(
 );
 
 /**
+ * The header follows the scroll.
+ *
+ * Two coupled edits, because the second is why the first ever mattered:
+ *
+ * - The root swaps `overflow:hidden` for `overflow:clip`. Both clip the wash
+ *   blobs that bleed past the edges, but `hidden` makes the root a scroll
+ *   container, and `position:sticky` never engages inside one that does not
+ *   itself scroll. This is also why the docs "on this page" rail, sticky since
+ *   it was written, had never actually stuck.
+ * - The header trades `position:relative` for sticky-at-top, over a
+ *   translucent wash of the page background so content slides behind it
+ *   legibly in both themes. The design's spacing is untouched.
+ */
+body = body.replace(
+  /(<div data-om-root style="[^"]*)overflow:hidden/,
+  "$1overflow:clip"
+);
+
+body = body.replace(
+  /(<header style=")position:relative;/,
+  "$1position:sticky;top:0;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(14px);"
+);
+
+/**
  * Wire the design's own state markers to real data.
  *
  * The exports carry `data-om-stat` (a figure with a populated and an empty

@@ -10,7 +10,7 @@ export function Chrome({ children }: { children: React.ReactNode }) {
 
 
 
-      <div data-om-root style={{ position: "relative", minWidth: "1200px", background: "var(--bg)", color: "var(--ink)", overflow: "hidden" }}>
+      <div data-om-root style={{ position: "relative", minWidth: "1200px", background: "var(--bg)", color: "var(--ink)", overflow: "clip" }}>
 
       <div data-om-wash style={{ position: "absolute", inset: "0", zIndex: "-1", pointerEvents: "none", background: "linear-gradient(180deg,var(--gtop) 0%,var(--gmid) 20%,var(--gmid) 52%,var(--gbot) 100%)" }}>
       <div style={{ position: "absolute", left: "-14%", bottom: "-6%", width: "62%", height: "52%", borderRadius: "50%", background: "radial-gradient(circle at 50% 50%,var(--g1) 0%,transparent 68%)", filter: "blur(100px)", animation: "om-mesh 34s ease-in-out infinite" }}></div>
@@ -19,7 +19,7 @@ export function Chrome({ children }: { children: React.ReactNode }) {
       <div style={{ position: "absolute", left: "24%", bottom: "16%", width: "46%", height: "34%", borderRadius: "50%", background: "radial-gradient(circle at 50% 50%,var(--g2) 0%,transparent 72%)", filter: "blur(120px)", animation: "om-mesh 46s ease-in-out infinite" }}></div>
       </div>
 
-      <header style={{ position: "relative", zIndex: "30", display: "flex", alignItems: "center", gap: "34px", padding: "20px 26px" }}>
+      <header style={{ position: "sticky", top: "0", background: "color-mix(in srgb,var(--bg) 82%,transparent)", backdropFilter: "blur(14px)", zIndex: "30", display: "flex", alignItems: "center", gap: "34px", padding: "20px 26px" }}>
       <a href="/" style={{ display: "flex", alignItems: "center", gap: "7px" }}>
       <img src="/one-logo-black.png" alt="" data-logo="light" width="24" height="29" style={{ height: "27px", width: "auto", marginRight: "-3px" }} /><img src="/one-logo-white.png" alt="" data-logo="dark" width="24" height="29" style={{ height: "27px", width: "auto", marginRight: "-3px" }} />
       <span style={{ font: "700 20px/1 'Figtree',sans-serif", letterSpacing: "-.03em" }}>One</span>
